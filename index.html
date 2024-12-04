@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Sample Website</title>
+      <style>
+        .header{
+          text-align:center;
+        }
+        .nav-x ul{
+         /* Fix the spacing issue between inline element, float is indded a better solution? */
+          /* What if I want some right, float have better control over individual element*/
+          word-spacing:-4px;
+          padding:0;
+          background-color:black;
+          list-style-type:none;
+        }
+        
+        .nav-x ul li{
+          padding:20px 0px;
+          display:inline-block;
+          width:100px;
+          text-align:center;
+        }
+        
+        .nav-x ul li a{
+          color:white;
+          text-decoration:none;
+        }
+        
+        .nav-x ul li:hover{
+          background-color:grey;
+          text-decoration:none;
+        }
+        
+        .fakeimg {
+          color:yellow;
+          background-color:gray;
+          width:100%;
+        }
+        
+        .main{
+          width:100%;
+        }
+        
+      
+        .left{
+          float:left;
+          width:70%;
+          box-sizing: border-box;
+          padding-left: 20px;
+        }
+        
+        .right{
+          float:left;
+          width:30%;
+          box-sizing: border-box;
+          padding-left: 20px;
+        }
+        
+         .section{
+          width:100%;
+          padding:20px;
+          margin-top:20px;
+          border: 1px solid black;
+          box-sizing: border-box;
+        }
+        
+        .block{
+          width:100%;
+          padding:20px;
+          margin-top:20px;
+          border: 1px solid black;
+          box-sizing: border-box;
+        }
+       
+        .main::after{
+          content:"";
+          clear:both;
+          display:table;
+        }
+        
+        .footer{
+          text-align:center;
+          background-color:gray;
+          margin-top:20px;
+          padding:40px 0;
+          box-sizing: border-box;
+        }
+      </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>My Website</p>
+    <p>Resize the browser window to see the effect.</p>
+  </div>
+  <div class="nav-x">
+    <ul>
+      <li><a href="#">Link1</a></li>
+      <li><a href="#">Link2</a></li>
+      <li><a href='#'>Link3</a></li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div class="left">
+      <div class="section">
+        <h2>Title Heading</h2>
+        <div class="fakeimg" style="height:200px">Image</div>
+        <p>Hello World.......</p>
+      </div>
+      
+       <div class="section">
+        <h2>Title Heading</h2>
+        <div class="fakeimg" style="height:200px">Image</div>
+        <p>Hello World.......</p>
+      </div>
+    </div>
+    <div class="right">
+      <div class="block">
+        <h1>About Me</h1>
+        <div class="fakeimg" style="height:200px">Image</div>
+      </div>
+      <div class="block">
+        <h2>Polular Post</h2>
+        <div class="fakeimg" style="height:200px">Image</div>
+      </div>
+      <div class="block">
+        <h2>Follow Me</h2>
+        <p>Some text..</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <h1>Footer</h2>
+  </div>
+</body>
+
+</html>
