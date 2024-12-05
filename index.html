@@ -2,10 +2,16 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Fengyi's Webpage</title>
       <style>
         * {
           box-sizing: border-box;
+        }
+        
+        h1, h2{
+          text-align: center;
         }
 
         .header{
@@ -99,20 +105,61 @@
           padding:40px 0;
         }
 
-        @media screen and (max-width: 800px) {
+
+        .icon-bar{
+          text-align: center;
+        }
+
+
+        .icon-bar a {
+          display: inline-block;
+          text-align: center;
+          padding: 16px;
+          transition: all 0.3s ease;
+          color: white;
+          font-size: 20px;
+        }
+
+        .icon-bar a:hover {
+          background-color: #787878;
+        }
+
+
+        .linkedin {
+          background: #007bb5;
+          color: white;
+        }
+
+        .github {
+          background: #000000;
+          color: white;
+        }
+
+
+
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 600px) {}
+
+      /* Small devices (portrait tablets and large phones, 600px and up) */
+      @media only screen and (min-width: 600px) {}
+
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media only screen and (max-width: 768px) {}
+
+      /* Large devices (laptops/desktops, 992px and up) */
+      @media only screen and (max-width: 992px) {
         .right {
           float: none;
           width: 100%;
         }
-      }
 
-        @media screen and (max-width: 800px) {
         .left {
-          visibility: hidden;
+          display: none;
         }
       }
 
-    
+      /* Extra large devices (large laptops and desktops, 1200px and up) */
+      @media only screen and (min-width: 1200px) {}
       </style>
 </head>
 
@@ -123,9 +170,10 @@
   </div>
   <div class="nav-x">
     <ul>
-      <li><a href="#">Link1</a></li>
-      <li><a href="#">Link2</a></li>
-      <li><a href='#'>Link3</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Publication</a></li>
+      <li><a href='#'>Project</a></li>
+      <li><a href="#">About</a></li>
     </ul>
   </div>
 
@@ -136,6 +184,7 @@
         <div class="block">
           <h1>About Me</h1>
           <div class="fakeimg" style="height:200px">Image</div>
+          <p>A hardworking student and an aspiring deverloper.</p>
         </div>
         <div class="block">
           <h2>Polular Post</h2>
@@ -143,7 +192,10 @@
         </div>
         <div class="block">
           <h2>Follow Me</h2>
-          <p>Some text..</p>
+          <div class="icon-bar">
+            <a href="https://www.linkedin.com/in/fengyiliu/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/lucasliu2019" class="github">  <i class="fa fa-github"></i> <!-- uses brands style --></a> 
+          </div>
         </div>
       </div>
     </div>
@@ -166,7 +218,7 @@
 
   </div>
   <div class="footer">
-    <h1>Footer</h2>
+    <h1>Fengyi's Personal Website</h2>
   </div>
 </body>
 
