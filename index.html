@@ -4,33 +4,41 @@
 <head>
   <title>Fengyi's Webpage</title>
       <style>
+        * {
+          box-sizing: border-box;
+        }
+
         .header{
           text-align:center;
         }
+
+        .nav-x{
+          position: sticky;
+          top: 0;
+        }
+
         .nav-x ul{
-         /* Fix the spacing issue between inline element, float is indded a better solution? */
-          /* What if I want some right, float have better control over individual element*/
-          word-spacing:-4px;
-          padding:0;
-          background-color:black;
           list-style-type:none;
+          padding:0;
+          margin:0;
+          overflow: hidden;
+          background-color:black;
         }
         
         .nav-x ul li{
-          padding:20px 0px;
-          display:inline-block;
-          width:100px;
-          text-align:center;
+          float: left;
         }
         
         .nav-x ul li a{
+          display: block;
           color:white;
+          text-align:center;
+          padding:14px 16px;
           text-decoration:none;
         }
         
         .nav-x ul li:hover{
           background-color:grey;
-          text-decoration:none;
         }
         
         .fakeimg {
@@ -39,22 +47,28 @@
           width:100%;
         }
         
-        .main{
-          width:100%;
+        .wrapper-right{
+          margin: auto;
+          width: 100%;
+          max-width: 1200px;
         }
-        
-      
-        .left{
-          float:left;
-          width:70%;
-          box-sizing: border-box;
-          padding-left: 20px;
-        }
-        
+
         .right{
           float:left;
+          width:70%;
+          padding-left: 20px;
+        }
+
+        .wrapper-left{
+          margin: auto;
+          width: 100%;
+          max-width: 400px;
+        }
+        
+        .left{
+          float:left;
           width:30%;
-          box-sizing: border-box;
+          max-width: 400px;
           padding-left: 20px;
         }
         
@@ -63,7 +77,6 @@
           padding:20px;
           margin-top:20px;
           border: 1px solid black;
-          box-sizing: border-box;
         }
         
         .block{
@@ -71,7 +84,6 @@
           padding:20px;
           margin-top:20px;
           border: 1px solid black;
-          box-sizing: border-box;
         }
        
         .main::after{
@@ -85,8 +97,22 @@
           background-color:gray;
           margin-top:20px;
           padding:40px 0;
-          box-sizing: border-box;
         }
+
+        @media screen and (max-width: 800px) {
+        .right {
+          float: none;
+          width: 100%;
+        }
+      }
+
+        @media screen and (max-width: 800px) {
+        .left {
+          visibility: hidden;
+        }
+      }
+
+    
       </style>
 </head>
 
@@ -104,33 +130,40 @@
   </div>
 
   <div class="main">
+
     <div class="left">
-      <div class="section">
-        <h2>Fengyi's Webpage</h2>
-        <div class="fakeimg" style="height:200px">Image</div>
-        <p>Hello World.......</p>
-      </div>
-      
-       <div class="section">
-        <h2>Title Heading</h2>
-        <div class="fakeimg" style="height:200px">Image</div>
-        <p>Hello World.......</p>
+      <div class="wrapper-left">
+        <div class="block">
+          <h1>About Me</h1>
+          <div class="fakeimg" style="height:200px">Image</div>
+        </div>
+        <div class="block">
+          <h2>Polular Post</h2>
+          <div class="fakeimg" style="height:200px">Image</div>
+        </div>
+        <div class="block">
+          <h2>Follow Me</h2>
+          <p>Some text..</p>
+        </div>
       </div>
     </div>
+
     <div class="right">
-      <div class="block">
-        <h1>About Me</h1>
-        <div class="fakeimg" style="height:200px">Image</div>
-      </div>
-      <div class="block">
-        <h2>Polular Post</h2>
-        <div class="fakeimg" style="height:200px">Image</div>
-      </div>
-      <div class="block">
-        <h2>Follow Me</h2>
-        <p>Some text..</p>
+      <div class="wrapper-right">
+        <div class="section">
+          <h2>Fengyi's Webpage</h2>
+          <div class="fakeimg" style="height:200px">Image</div>
+          <p>Hello World.......</p>
+        </div>
+        
+        <div class="section">
+          <h2>Title Heading</h2>
+          <div class="fakeimg" style="height:200px">Image</div>
+          <p>Hello World.......</p>
+        </div>
       </div>
     </div>
+
   </div>
   <div class="footer">
     <h1>Footer</h2>
