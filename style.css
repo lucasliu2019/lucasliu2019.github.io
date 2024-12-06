@@ -1,0 +1,213 @@
+/* Theme Color define here*/
+:root {
+  /* Color of background */
+  --header: #33587d;
+  --header-color: #bcdeff;
+  --main:#33587d;
+  --section: #ffffff;
+  --section-shadow:rgb(173, 216, 230);
+  --block: #ffffff;
+  --block-shadow:rgb(173, 216, 230);
+  --footer: #000000;
+  --footer-text:#ffffff;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2{
+  text-align: center;
+}
+
+.header{
+  min-height: 10vh;
+  padding: 30px;
+  background-color: var(--header);
+  text-align:center;
+  color:var(--header-color)
+}
+
+.header h1,h2{
+  margin-top: 20px;
+}
+
+.nav-x{
+  z-index: 9;
+  position: sticky;
+  top: 0;
+}
+
+.nav-x ul{
+  list-style-type:none;
+  padding:0;
+  margin:0;
+  overflow: hidden;
+  background-color:black;
+}
+
+.nav-x ul li{
+  float: left;
+}
+
+.nav-x ul li a{
+  display: block;
+  color:white;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+}
+
+.nav-x ul li:hover{
+  background-color:grey;
+}
+
+.fakeimg {
+  color:yellow;
+  background-color:gray;
+  width:100%;
+}
+
+.wrapper-right{
+  margin: auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.right{
+  float:left;
+  width:70%;
+  padding-left: 20px;
+}
+
+.wrapper-left{
+  margin: auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+.left{
+  float:left;
+  width:30%;
+  max-width: 400px;
+  padding-left: 20px;
+}
+
+ .section{
+  border-radius: 5px;
+  background-color: var(--section);
+  width:100%;
+  padding:50px;
+  margin:20px 0;
+  border: 1px solid black;
+  box-shadow: 6px 6px 7px var(--section-shadow);
+}
+
+.block{
+  border-radius: 5px;
+  background-color: var(--block);
+  width:100%;
+  padding:20px;
+  margin-top:20px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 7px var(--block-shadow);
+}
+
+
+.main{
+  padding: 10px;
+  background-color: var(--main);
+  min-height: 75vh;
+}
+
+.main::after{
+  content:"";
+  clear:both;
+  display:table;
+}
+
+.footer{
+  text-align:center;
+  background-color:var(--footer);
+  color: var(--footer-text);
+  padding:40px 0;
+  /* To fix the footer is not at end */
+  min-height: 10vh;
+}
+
+
+.icon-bar{
+  text-align: center;
+}
+
+
+.icon-bar a {
+  display: inline-block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #787878;
+}
+
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.github {
+  background: #000000;
+  color: white;
+}
+
+.photo{
+  text-align: center;
+}
+
+.photo img {
+  width:40%;
+  border-radius:80px;
+  opacity: 0.8;
+}
+
+.section-time .fa{
+  margin-right: 8px;
+}
+
+
+.icon-section .fa{
+  margin-right: 8px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+.right {
+  float: none;
+  width: 100%;
+}
+
+.left {
+  display: none;
+}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
