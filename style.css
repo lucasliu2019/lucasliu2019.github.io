@@ -23,6 +23,10 @@ h1, h2{
   text-align: center;
 }
 
+li{
+  margin: 3px 0;
+}
+
 hr{
   margin: 10px 0;
 }
@@ -112,10 +116,6 @@ hr{
 
 .section-item ul{
   list-style-position: inside;
-}
-
-.section-item ul li{
-  margin: 3px 0;
 }
 
 .block{
