@@ -114,6 +114,10 @@ hr{
   box-shadow: 6px 6px 7px var(--section-shadow);
 }
 
+.section-time{
+  margin: 6px 0;
+}
+
 .section-item ul{
   list-style-position: inside;
 }
