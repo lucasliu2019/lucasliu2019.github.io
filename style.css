@@ -23,6 +23,18 @@ h1, h2{
   text-align: center;
 }
 
+hr{
+  margin: 10px 0;
+}
+
+ul{
+  list-style-position: inside;
+}
+
+li{
+  margin: 3px 0;
+}
+
 .header{
   min-height: 10vh;
   padding: 30px;
@@ -180,10 +192,6 @@ h1, h2{
 
 .section-time .fa{
   margin-right: 8px;
-}
-
-hr{
-  margin: 10px 0;
 }
 
 
