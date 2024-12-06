@@ -182,9 +182,13 @@ h1, h2{
   margin-right: 8px;
 }
 
+hr{
+  margin: 10px 0;
+}
+
 
 .icon-section .fa{
-  margin-right: 8px;
+  margin: 8px 8px 16px 0;
 }
 
 
