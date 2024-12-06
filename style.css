@@ -27,14 +27,6 @@ hr{
   margin: 10px 0;
 }
 
-ul{
-  list-style-position: inside;
-}
-
-li{
-  margin: 3px 0;
-}
-
 .header{
   min-height: 10vh;
   padding: 30px;
@@ -116,6 +108,14 @@ li{
   margin:20px 0;
   border: 1px solid black;
   box-shadow: 6px 6px 7px var(--section-shadow);
+}
+
+.section-item ul{
+  list-style-position: inside;
+}
+
+.section-item ul li{
+  margin: 3px 0;
 }
 
 .block{
