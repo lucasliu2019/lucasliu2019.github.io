@@ -88,7 +88,7 @@ hr{
 .right{
   float:left;
   width:70%;
-  padding-left: 20px;
+  padding: 10px;
 }
 
 .wrapper-left{
@@ -101,7 +101,7 @@ hr{
   float:left;
   width:30%;
   max-width: 400px;
-  padding-left: 20px;
+  padding: 10px;
 }
 
  .section{
@@ -163,10 +163,10 @@ hr{
 .icon-bar a {
   display: inline-block;
   text-align: center;
-  padding: 16px;
+  padding: 10px;
   transition: all 0.3s ease;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .icon-bar a:hover {
