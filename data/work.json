@@ -1,0 +1,46 @@
+[
+{
+    "job":"Grader/Marker",
+    "location":"University of Manitoba, Winnipeg, MB",
+    "time":"Sept 2023 - Aug 2024",
+    "duty":[
+        "Mark assignments and give feedback",
+        "List of Courses: COMP2080, COMP3030, COMP3170"
+    ]
+},
+{
+    "job":"Teaching Assistant",
+    "location":"University of Manitoba, Winnipeg, MB",
+    "time":"Sept 2023 - April 2024",
+    "duty":[
+        "Present lab slides",
+        "Guide the students on practice questions",
+        "Demonstrate the programming solutions",
+        "Mark the student solutions",
+        "List of Courses: COMP1010, COMP1020"
+    ]
+},
+{
+    "job":"Wiring Technician",
+    "location":"L.V. Control Manufacturing Ltd, Winnipeg, MB",
+    "time":"June 2014 - August 2017",
+    "duty":[
+        "Interpret electrical drawing",
+        "Install motor controller, breaker, VFD et.",
+        "Install PLC and other automated devices",
+        "Wire and test the electrical panel according to the drawings"
+    ]
+},
+{
+    "job":"Technician Assistant ",
+    "location":"B.S.D. Solution, Winnipeg, MB",
+    "time":"May 2013 - August 2013",
+    "duty":[
+        "Interpret electrical drawing",
+        "Make bills of materials (BOMs)",
+        "System commissioning, point check",
+        "Install VAVs & actuators & Controllers",
+        "Wiring Actuator, controller and heater"
+    ]
+}
+]

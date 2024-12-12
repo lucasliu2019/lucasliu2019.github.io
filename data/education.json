@@ -1,0 +1,38 @@
+[
+    {
+        "location":"University of Manitoba, Winnipeg, MB",
+        "time":"Sept 2023 - Aug 2024",
+        "degree":"Ph.D. in Computer Science",
+        "duty":[
+            "Work on distributed algorithms",
+            "Investigate distributed graph coloring and network decomposition"
+        ]
+    },
+    {
+        "location":"University of Manitoba, Winnipeg, MB",
+        "time":"Setp 2021 - May 2024",
+        "degree":"M.Sc. in Computer Science",
+        "duty":[
+            "Research in combinatorial games including Zombies and Survivors"
+        ]
+    },
+    {
+        "location":"University of Manitoba, Winnipeg, MB",
+        "time":"Setp 2017 - May 2021",
+        "degree":"B.Sc. in Computer Science",
+        "duty":[
+            "Honor graduate with over 4.0/4.5 GPA",
+            "Develop problem-solving using computers",
+            "Build strong programming skills in Java",
+            "Understand the performance of algorithms"
+        ]
+    },
+    {
+        "location":"Red River College, Winnipeg, MB",
+        "time":"Setp 2011 - May 2013",
+        "degree":"Diploma in Instrumentation Engineering Technology",
+        "duty":[
+            "Focus on automation in the field of electrical engineering"
+        ]
+    }
+    ]

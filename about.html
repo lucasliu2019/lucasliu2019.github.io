@@ -53,108 +53,17 @@
         <div class="section">
           <h2 class="icon-section"><i class="fa fa-suitcase"></i>Work Experience</h2>
 
-          <div class="section-item">
-            <h3 class="section-title"><b>Grader/Marker / University of Manitoba, Winnipeg, MB</b></h5>
-            <h4 class="section-time"><i class="fa fa-calendar"></i>Sept 2023 - Aug 2024</h6>
-            <p>
-              <ul>
-                <li>Mark assignments and give feedback.</li>
-                <li>List of Courses: COMP2080, COMP3030, COMP3170</li>
-              </ul>
-            </p>
-
-            <hr>
-            <h3 class="section-title"><b>Teaching Assistant / University of Manitoba, Winnipeg, MB</b></h5>
-            <h4 class="section-time"><i class="fa fa-calendar"></i>Sept 2023 - April 2024</h6>
-            <p>
-                <ul>
-                  <li>Present lab slides</li>
-                  <li>Guide the students on practice questions</li>
-                  <li>Demonstrate the programming solutions</li>
-                  <li>Mark the student solutions.</li>
-                  <li>List of Courses: COMP1010, COMP1020</li>
-                </ul>
-            </p>
-
-            <hr>
-            <h3 class="section-title"><b>Wiring Technician / L.V. Control Manufacturing Ltd, Winnipeg, MB</b></h5>
-            <h4 class="section-time"><i class="fa fa-calendar" ></i>June 2014 - August 2017</h6>
-            <p>
-                <ul>
-                  <li>Interpret electrical drawing</li>
-                  <li>Install motor controller, breaker, VFD et.</li>
-                  <li>Install PLC and other automated devices</li>
-                  <li>Wire and test the electrical panel according to the drawings</li>
-                </ul>
-            </p>
-
-            <hr>
-            <h3 class="section-title"><b>Technician Assistant / B.S.D. Solution, Winnipeg, MB</b></h5>
-            <h4 class="section-time"><i class="fa fa-calendar" style="margin-right: 8px;"></i>May 2013 - August 2013</h6>
-            <p>
-                <ul>
-                  <li>Interpret electrical drawing</li>
-                  <li>Make bills of materials (BOMs)</li>
-                  <li>System commissioning, point check</li>
-                  <li>Install VAVs \& actuators \& Controllers</li>
-                  <li>Wiring Actuator, controller and heater</li>
-                </ul>
-            </p>
-
+          <div class="section-item" id="section-job">
+            <!-- To Be Inserted -->
           </div>
         </div>
         
         <div class="section">
           <h2 class="icon-section"><i class="fa fa-certificate"></i>Education</h2>
 
-          <div class="section-item">
-            <h3 class="section-title"><b>University of Manitoba</b></h3>
-            <h4 class="section-time"><i class="fa fa-calendar"></i>Sept 2023 - Present</h4>
-            <p>Ph.D. in Computer Science
-              <ul>
-                <li>Work on distributed algorithms</li>
-                <li>Investigate distributed graph coloring and network decomposition</li>
-              </ul>
-            </p>
+          <div class="section-item" id="section-education">
+            <!-- To Be Inserted -->
           </div>
-
-          <hr>
-          <div class="section-item">
-            <h3 class="section-title"><b>University of Manitoba</b></h3>
-            <h4 class="section-time"><i class="fa fa-calendar"></i>Setp 2021 - May 2024</h4>
-            <p>M.Sc. in Computer Science
-              <ul>
-                <li>Research in combinatorial games including Zombies and Survivors</li>
-              </ul>
-            </p>
-          </div>
-
-          <hr>
-          <div class="section-item">
-            <h3 class="section-title"><b>University of Manitoba</b></h3>
-            <h4 class="section-time"><i class="fa fa-calendar"></i>Setp 2017 - May 2021</h4>
-            <p>B.Sc. in Computer Science
-              <ul>
-                <li>Honor graduate with over 4.0/4.5 GPA</li>
-                <li>Develop problem-solving using computers</li>
-                <li>Build strong programming skills in Java</li>
-                <li>Understand the performance of algorithms</li>
-              </ul>
-            </p>
-          </div>
-
-          <hr>
-          <div class="section-item">
-            <h3 class="section-title"><b>Red River College</b></h3>
-            <h4 class="section-time"><i class="fa fa-calendar"></i>Setp 2011 - May 2013</h4>
-            <p>Diploma in Instrumentation Engineering Technology
-              <ul>
-                <li>Focus on automation in the field of electrical engineering.</li>
-              </ul>
-            </p>
-          </div>
-
-          
         </div>
       </div>
     </div>
@@ -164,5 +73,60 @@
     <h1>Fengyi's Personal Website</h2>
   </div>
 </body>
+
+<script>
+  function readJSON(path, callback){
+    var xhttp=new XMLHttpRequest();
+    xhttp.open("GET", path,true);
+    xhttp.onreadystatechange=function(){
+      if(xhttp.readyState==4 && xhttp.status==200){
+        callback(xhttp.responseText);
+      }
+    }
+    xhttp.send();
+  }
+
+  readJSON("data/work.json", function(inText){
+    var myData=JSON.parse(inText);
+    let text="";
+    for(let i=0;i<myData.length;i++){
+
+      text=text+"<hr>";
+      text=text+"<h3 class='section-title'><b>"+ myData[i]["job"] + "/" + myData[i]["location"]+"</b></h3>";
+      text=text+"<h4 class='section-time'><i class='fa fa-calendar'></i>"+myData[i]["time"]+"</h4>";
+      text=text+"<p>";
+      text=text+"<ul>";
+        for(let j=0;j<myData[i]["duty"].length;j++){
+          text=text+"<li>"+myData[i]["duty"][j]+"</li>";
+        }
+      text=text+"</ul>";
+      text=text+"</p>";
+
+    }
+    document.getElementById("section-job").innerHTML+=text;
+  });
+
+
+  readJSON("data/education.json", function(inText){
+    var myData=JSON.parse(inText);
+    let text="";
+    for(let i=0;i<myData.length;i++){
+
+      text=text+"<hr>";
+      text=text+"<h3 class='section-title'><b>"+ myData[i]["location"] +"</b></h3>";
+      text=text+"<h4 class='section-time'><i class='fa fa-calendar'></i>"+myData[i]["time"]+"</h4>";
+      text=text+"<p>"+myData[i]["degree"];
+      text=text+"<ul>";
+        for(let j=0;j<myData[i]["duty"].length;j++){
+          text=text+"<li>"+myData[i]["duty"][j]+"</li>";
+        }
+      text=text+"</ul>";
+      text=text+"</p>";
+
+    }
+    document.getElementById("section-education").innerHTML+=text;
+  });
+
+</script>
 
 </html>
