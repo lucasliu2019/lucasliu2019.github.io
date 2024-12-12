@@ -92,7 +92,7 @@
     for(let i=0;i<myData.length;i++){
 
       text=text+"<hr>";
-      text=text+"<h3 class='section-title'><b>"+ myData[i]["job"] + ",&nbsp" + myData[i]["location"]+"</b></h3>";
+      text=text+"<h3 class='section-title'><b>"+ myData[i]["job"] + ",&nbsp <span class='weak'>" + myData[i]["location"]+"</span></b></h3>";
       text=text+"<h4 class='section-time'><i class='fa fa-calendar'></i>"+myData[i]["time"]+"</h4>";
       text=text+"<p>";
       text=text+"<ul>";
