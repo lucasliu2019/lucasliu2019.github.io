@@ -48,8 +48,12 @@ span.weak {
   color:var(--header-color)
 }
 
-.header h1,h2{
-  margin-top: 20px;
+.header #header, .header #subheader{
+  margin-top: 5px;
+}
+
+.footer #footer{
+  margin-top: 5px;
 }
 
 .nav-x{
