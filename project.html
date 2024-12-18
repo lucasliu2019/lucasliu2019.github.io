@@ -17,8 +17,8 @@
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="publication.html">Publication</a></li>
-      <li><a href='project.html'>Project</a></li>
-      <li><a href="#">About</a></li>
+      <li><a href='#'>Project</a></li>
+      <li><a href="about.html">About</a></li>
     </ul>
   </div>
 
@@ -28,20 +28,13 @@
       <div class="wrapper-left">
 
         <div class="block">
-          <h2>About Me</h2>
+          <h2>Polular Post</h2>
           <div class="photo">
-            <img src="img/person.jpg" alt="Me">
+            <div class="fakeimg" style="height:200px">Image</div>
           </div>
-          <p>A hardworking student and an aspiring deverloper.</p>
+          <p>My Lastest project.</p>
         </div>
-        <div class="block">
-          <h2>Skill</h2>
-          <ul>
-            <li>Web Developer</li>
-            <li>Android Developer</li>
-            <li>Apple Developer</li>
-          </ul>
-        </div>
+
         <div class="block">
           <h2>Follow Me</h2>
           <div class="icon-bar">
@@ -55,17 +48,9 @@
     <div class="right">
       <div class="wrapper-right">
         <div class="section">
-          <h2 class="icon-section"><i class="fa fa-suitcase"></i>Work Experience</h2>
+          <h2 class="icon-section"><i class="fa fa-suitcase"></i>Project</h2>
 
           <div class="section-item" id="section-job">
-            <!-- To Be Inserted -->
-          </div>
-        </div>
-        
-        <div class="section">
-          <h2 class="icon-section"><i class="fa fa-certificate"></i>Education</h2>
-
-          <div class="section-item" id="section-education">
             <!-- To Be Inserted -->
           </div>
         </div>
@@ -98,42 +83,16 @@
     var myData=JSON.parse(inText);
     let text="";
     for(let i=0;i<myData.length;i++){
-
       text=text+"<hr>";
-      text=text+"<h3 class='section-title'><b>"+ myData[i]["job"] + ",&nbsp <span class='weak'>" + myData[i]["location"]+"</span></b></h3>";
+      text=text+"<h3 class='section-title'><b>"+ myData[i]["name"] + "</h3>";
       text=text+"<h4 class='section-time'><i class='fa fa-calendar'></i>"+myData[i]["time"]+"</h4>";
       text=text+"<p>";
-      text=text+"<ul>";
-        for(let j=0;j<myData[i]["duty"].length;j++){
-          text=text+"<li>"+myData[i]["duty"][j]+"</li>";
-        }
-      text=text+"</ul>";
+      text=text+myData[i]["description"];
       text=text+"</p>";
-
     }
     document.getElementById("section-job").innerHTML+=text;
   });
 
-
-  readJSON("data/education.json", function(inText){
-    var myData=JSON.parse(inText);
-    let text="";
-    for(let i=0;i<myData.length;i++){
-
-      text=text+"<hr>";
-      text=text+"<h3 class='section-title'>"+ myData[i]["school"] +",&nbsp <span class='weak'>"+myData[i]["location"]+"</span></h3>";
-      text=text+"<h4 class='section-time'><i class='fa fa-calendar'></i>"+myData[i]["time"]+"</h4>";
-      text=text+"<p>"+myData[i]["degree"];
-      text=text+"<ul>";
-        for(let j=0;j<myData[i]["duty"].length;j++){
-          text=text+"<li>"+myData[i]["duty"][j]+"</li>";
-        }
-      text=text+"</ul>";
-      text=text+"</p>";
-
-    }
-    document.getElementById("section-education").innerHTML+=text;
-  });
 
 </script>
 
