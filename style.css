@@ -22,8 +22,8 @@ list-style-position: inside;
   height: auto;
 }
 
-#section-project{
-
+#project-tile{
+  width: 50%;
 }
 
 * {
