@@ -83,6 +83,7 @@
     var myData=JSON.parse(inText);
     let text="";
     for(let i=0;i<myData.length;i++){
+      text=text+"<a src='"+ myData[i]["url"]+"''>"+ myData[i]["name"] +"</a>";
       text=text+"<hr>";
       text=text+"<h3 class='section-title'><b>"+ myData[i]["name"] + "</h3>";
       text=text+"<h4 class='section-time'><i class='fa fa-calendar'></i>"+myData[i]["time"]+"</h4>";
