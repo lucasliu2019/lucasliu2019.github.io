@@ -2,7 +2,7 @@
     {
         "name":"Persenal Website",
         "time":"Dec 2024",
-        "url":"/data/projectImag/personal_web.PNG",
+        "url":"/data/projectImg/personal_web.png",
         "description": "A static website implemented using CSS and HTML. The data is stored in JSON."
     }
 ]
