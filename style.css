@@ -17,6 +17,15 @@ ul{
 list-style-position: inside;
 }
 
+#projectImg{
+  width:100%;
+  height: auto;
+}
+
+#section-project{
+
+}
+
 * {
   margin: 0;
   padding: 0;

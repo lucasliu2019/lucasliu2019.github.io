@@ -49,8 +49,7 @@
       <div class="wrapper-right">
         <div class="section">
           <h2 class="icon-section"><i class="fa fa-suitcase"></i>Project</h2>
-
-          <div class="section-item" id="section-project">
+          <div class="section-item, section-project">
             <!-- To Be Inserted -->
           </div>
         </div>
@@ -84,7 +83,7 @@
     let text="";
     for(let i=0;i<myData.length;i++){
       text=text+"<hr>";
-      text=text+"<a src='"+ myData[i]["url"]+"'><img src='" + myData[i]["url"] + "' alt='"+myData[i]["name"]+"'></a>";
+      text=text+"<a class='projectImg' src='"+ myData[i]["url"]+"'><img src='" + myData[i]["url"] + "' alt='"+myData[i]["name"]+"'></a>";
       text=text+"<h3 class='section-title'>"+ myData[i]["name"] + "</h3>";
       text=text+"<h4 class='section-time'><i class='fa fa-calendar'></i>"+myData[i]["time"]+"</h4>";
       text=text+"<p>";
