@@ -17,8 +17,15 @@ ul{
 list-style-position: inside;
 }
 
+
+
+.project-tile img{
+  width: 100%;
+}
+
+
 #projectImg{
-  width:100%;
+  width: 100%;
   height: auto;
 }
 
