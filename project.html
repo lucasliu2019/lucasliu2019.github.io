@@ -83,7 +83,9 @@
     let text="";
     for(let i=0;i<myData.length;i++){
       text=text+"<hr>";
-      text=text+"<a class='projectImg' src='"+ myData[i]["url"]+"'><img src='" + myData[i]["url"] + "' alt='"+myData[i]["name"]+"'></a>";
+      text=text+"<a class='projectImg' src='"+ myData[i]["url"]+"'>";
+      text=text+"<img src='" + myData[i]["url"] + "' alt='"+myData[i]["name"]+"'>";
+      text=text+"</a>";
       text=text+"<h3 class='section-title'>"+ myData[i]["name"] + "</h3>";
       text=text+"<h4 class='section-time'><i class='fa fa-calendar'></i>"+myData[i]["time"]+"</h4>";
       text=text+"<p>";
