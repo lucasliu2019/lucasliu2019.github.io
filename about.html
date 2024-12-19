@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
   <title>Fengyi's Webpage</title>
 </head>
 
@@ -83,17 +84,6 @@
 </body>
 
 <script>
-  function readJSON(path, callback){
-    var xhttp=new XMLHttpRequest();
-    xhttp.open("GET", path,true);
-    xhttp.onreadystatechange=function(){
-      if(xhttp.readyState==4 && xhttp.status==200){
-        callback(xhttp.responseText);
-      }
-    }
-    xhttp.send();
-  }
-
   readJSON("data/work.json", function(inText){
     var myData=JSON.parse(inText);
     let text="";
@@ -134,7 +124,6 @@
     }
     document.getElementById("section-education").innerHTML+=text;
   });
-
 </script>
 
 </html>

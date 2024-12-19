@@ -167,6 +167,15 @@ span.weak {
   width: 100%;
 }
 
+#post-tile{
+  margin: auto;
+  width: 80%;
+}
+
+#post-tile img{
+  width: 100%;
+}
+
 .main::after{
   content:"";
   clear:both;

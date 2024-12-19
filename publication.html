@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
   <title>Fengyi's Webpage</title>
 </head>
 
@@ -25,11 +26,7 @@
   <div class="main">
     <div class="left">
       <div class="wrapper-left">
-      
-        <div class="block">
-          <h2>Polular Post</h2>
-          <div class="fakeimg" style="height:200px">Image</div>
-        </div>
+  
         <div class="block">
           <h2>Follow Me</h2>
           <div class="icon-bar">
@@ -45,10 +42,8 @@
         <div class="section">
           <h2>My Publications</h2>
         <!----------------------------------->
-            <ul>
-              <li>Stephane Durocher, Shahin Kamali, Myroslav Kryven, Fengyi Liu, Amirhossein Mashghdoust, Avery Miller, Pouria Zamani Nezhad, Ikaro Penha Costa, and Timothy Zapp. 2024. Cops and&nbsp;Robbers on&nbsp;1-Planar Graphs. In Graph Drawing and Network Visualization: 31st International Symposium, GD 2023, Isola delle Femmine, Palermo, Italy, September 20–22, 2023, Revised Selected Papers, Part II. Springer-Verlag, Berlin, Heidelberg, 3–17. https://doi.org/10.1007/978-3-031-49275-4_1</li>
-              <li>Stephane Durocher, Myroslav Kryven, Fengyi Liu, Amirhossein Mashghdoust, and Ikaro Penha Costa. 2024. 2-Coloring Point Guards in a k-Guarded Polygon. 40th European Workshop Comput. Geom</li>
-              <li>Fengyi Liu. 2024. Zombies and Survivors on Graph Classes. University of Manitoba. </li>
+            <ul id="pub-list">
+              <!-- TO Be Inserted -->
             </ul>
         <!------------------------------------->
         </div>
@@ -66,5 +61,19 @@
         </div>
   </div>
 </body>
+
+<script>
+  readJSON("data/publication.json", function(inText){
+    var myData=JSON.parse(inText);
+    let text="";
+    for(let i=0;i<myData.length;i++){
+      text=text+"<li>";
+      text=text+myData[i]["entry"];
+      text=text+" <a href='"+ myData[i]["src"]+"''>pdf</a>";
+      text=text +"</li>";
+    }
+    document.getElementById("pub-list").innerHTML+=text;
+  });
+</script>
 
 </html>

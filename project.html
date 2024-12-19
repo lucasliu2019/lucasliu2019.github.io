@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
   <title>Fengyi's Webpage</title>
 </head>
 
@@ -28,11 +29,9 @@
       <div class="wrapper-left">
 
         <div class="block">
-          <h2>Polular Post</h2>
-          <div class="photo">
-            <div class="fakeimg" style="height:200px">Image</div>
+          <h2>Polular Project</h2>
+          <div id="post-tile">
           </div>
-          <p>My Lastest project.</p>
         </div>
 
         <div class="block">
@@ -67,17 +66,6 @@
 </body>
 
 <script>
-  function readJSON(path, callback){
-    var xhttp=new XMLHttpRequest();
-    xhttp.open("GET", path,true);
-    xhttp.onreadystatechange=function(){
-      if(xhttp.readyState==4 && xhttp.status==200){
-        callback(xhttp.responseText);
-      }
-    }
-    xhttp.send();
-  }
-
   readJSON("data/project.json", function(inText){
     var myData=JSON.parse(inText);
     let text="";
@@ -91,11 +79,14 @@
       text=text+"<p>";
       text=text+myData[i]["description"];
       text=text+"</p>";
+
+      if(i==0)
+      {
+        document.getElementById("post-tile").innerHTML+=text;
+      }
     }
     document.getElementById("section-project").innerHTML+=text;
   });
-
-
 </script>
 
 </html>
