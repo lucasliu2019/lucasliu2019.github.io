@@ -3,6 +3,7 @@
         "name":"Persenal Website",
         "time":"Dec 2024",
         "url":"/data/projectImg/personal_web.PNG",
+        "src":"https://lucasliu2019.github.io/",
         "description": "A static website implemented using CSS and HTML. The data is stored in JSON."
     }
 ]
