@@ -48,7 +48,7 @@
       <div class="wrapper-right">
         <div class="section">
           <h2 class="icon-section"><i class="fa fa-suitcase"></i>Project</h2>
-          <div class="section-item, project-tile" id="section-project">
+          <div class="section-item" id="section-project">
             <!-- To Be Inserted -->
           </div>
         </div>
@@ -70,6 +70,7 @@
     var myData=JSON.parse(inText);
     let text="";
     for(let i=0;i<myData.length;i++){
+      text=text+"<div class='project-tile'>";
       text=text+"<hr>";
       text=text+"<a class='projectImg' href='"+ myData[i]["url"]+"'>";
       text=text+"<img src='" + myData[i]["url"] + "' alt='"+myData[i]["name"]+"'>";
@@ -79,6 +80,7 @@
       text=text+"<p>";
       text=text+myData[i]["description"];
       text=text+"</p>";
+      text=text+"</div>";
 
       if(i==0)
       {

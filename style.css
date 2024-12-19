@@ -122,6 +122,7 @@ span.weak {
   border-radius: 5px;
   background-color: var(--section);
   width:100%;
+  height: auto;
   padding:50px;
   margin:20px 0;
   border: 1px solid black;
@@ -132,11 +133,21 @@ span.weak {
   margin: 6px 0;
 }
 
+#section-project{
+  display: table;
+}
+
+.section-item{
+  width:100%;
+  height: auto;
+}
+
 .section-item ul{
   list-style-position: inside;
 }
 
 .block{
+  display: table;
   border-radius: 5px;
   background-color: var(--block);
   width:100%;
@@ -154,16 +165,17 @@ span.weak {
 }
 
 
-
-.project-tile{
+#section-project .project-tile{
+  float: left;
   width: 50%;
+  padding: 10px;
 }
 
-.project-tile:hover img{
+#section-project .project-tile:hover img{
   opacity: 0.3;
 }
 
-.project-tile img{
+#section-project .project-tile img{
   width: 100%;
 }
 
@@ -243,14 +255,14 @@ span.weak {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .project-tile{
+  #section-project .project-tile{
     width: 33%;
   }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-  .project-tile{
+  #section-project .project-tile{
     width: 50%;
   }
   .right {
@@ -269,7 +281,7 @@ span.weak {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
-  .project-tile{
+  #section-project .project-tile{
     width: 100%;
   }
 }
