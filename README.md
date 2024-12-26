@@ -1,10 +1,4 @@
-# lucasliu2019.github.io
-## Portfolio website
-
-
-
-
-# Makefile Examples
+# Portfolio Website Examples
 ---
 title: Portfolio Examples
 author: Fengyi Liu
