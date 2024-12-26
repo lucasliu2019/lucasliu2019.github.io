@@ -96,6 +96,10 @@ span.weak {
   height: 120px;
 }
 
+.fakeimg:hover {
+  opacity: 0.3;
+}
+
 .fakeimg .fa{
   font-size: 50px;
 }
