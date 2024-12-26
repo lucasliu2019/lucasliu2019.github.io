@@ -12,6 +12,9 @@
   --footer-text:#ffffff;
 }
 
+a:link {
+  text-decoration: none;
+}
 
 ul{
 list-style-position: inside;
