@@ -1,9 +1,37 @@
 [
     {
         "name":"Persenal Website",
-        "time":"Dec 2024",
+        "time":"Dec 10 2024",
         "url":"/data/projectImg/personal_web.jpeg",
-        "src":"https://lucasliu2019.github.io/",
+        "src":"https://github.com/lucasliu2019/lucasliu2019.github.io",
         "description": "A static website implemented using CSS and HTML. The data is stored in JSON."
+    },
+    {
+        "name":"CMake Example",
+        "time":"Dec 23 2024",
+        "url":"",
+        "src":"https://github.com/lucasliu2019/cmake",
+        "description": "We create some simple examples for CMake."
+    },
+    {
+        "name":"Makefile Examples",
+        "time":"Dec 22 2024",
+        "url":"",
+        "src":"https://github.com/lucasliu2019/makefile",
+        "description": "We create some simple examples for Makefile. Makefile helps automate the compilation process!"
+    },
+    {
+        "name":"Template for RayLib library using CMake in VSCode",
+        "time":"Dec 22 2024",
+        "url":"",
+        "src":"https://github.com/lucasliu2019/RayLib-template-with-CMake-and-VSCode",
+        "description": "This template uses VSCode for the Raylib library in C/C++, the compilation is done using CMake."
+    },
+    {
+        "name":"wxWidgets Template with CMake",
+        "time":"Dec 22 2024",
+        "url":"",
+        "src":"https://github.com/lucasliu2019/wxWidgets_Template_CMake",
+        "description": "This template uses VSCode for wxWidgets library in C/C++, the compilation is done using CMake."
     }
 ]

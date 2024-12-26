@@ -91,6 +91,13 @@ span.weak {
   color:yellow;
   background-color:gray;
   width:100%;
+  text-align:center;
+  align-content:center;
+  height: 120px;
+}
+
+.fakeimg .fa{
+  font-size: 50px;
 }
 
 .wrapper-right{
