@@ -33,5 +33,12 @@
         "url":"",
         "src":"https://github.com/lucasliu2019/wxWidgets_Template_CMake",
         "description": "This template uses VSCode for wxWidgets library in C/C++, the compilation is done using CMake."
+    },
+    {
+        "name":"Snake_Game",
+        "time":"Dec 31 2024",
+        "url":"",
+        "src":"https://github.com/lucasliu2019/Snake_Game",
+        "description": "A classical snake game implmented in C++ with raylib."
     }
 ]
