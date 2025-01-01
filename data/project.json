@@ -37,7 +37,7 @@
     {
         "name":"Snake_Game",
         "time":"Dec 31 2024",
-        "url":"https://www.youtube.com/shorts/aZv5xR7kERo",
+        "url":"/data/projectImg/snake.PNG",
         "src":"https://github.com/lucasliu2019/Snake_Game",
         "description": "A classical snake game implmented in C++ with raylib. Check out the demo https://www.youtube.com/shorts/aZv5xR7kERo"
     }
