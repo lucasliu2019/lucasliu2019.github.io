@@ -9,7 +9,7 @@ Github: [https://github.com/lucasliu2019/lucasliu2019.github.io](https://github.
 
 
 
-We create a website. The website is serverliess and is using javascript to handling JSON data sets.
+We create a website. The website is serverless and is using javascript to handling JSON data sets.
 The layout of the pages uses float. 
 
 

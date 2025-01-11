@@ -10,51 +10,65 @@
 </head>
 
 <body>
+  <!-- HEADER SECTION -->
   <div class="header">
-    <h1 id="header">Fengyi's Webpage</h1>
-    <h3 id="subheader">Everything you need to know about me.</h3>
-  </div>
-  <div class="nav-x">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="publication.html">Publication</a></li>
-      <li><a href='project.html'>Project</a></li>
-      <li><a href="#">About</a></li>
-    </ul>
+    <div class="top-header">
+      <span id="top-header__title">Fengyi's Webpage</span>
+      <span id="top-header__subtitle">Everything you need to know about me.</span>
+    </div>
+    <div class="bot-header">
+      <div class="bot-header__content">
+        <ul class="nav">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="publication.html">Publication</a></li>
+          <li class="nav-item"><a href='project.html'>Project</a></li>
+          <li class="nav-item"><a href="#">About</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 
+  <!-- MAIN SECTION -->
   <div class="main">
-
+    <!-- LEFT COLUMN-->
     <div class="left">
       <div class="wrapper-left">
+        <div class="left__tile">
 
-        <div class="block">
-          <h2>About Me</h2>
-          <div class="photo">
-            <img src="img/person.jpg" alt="Me">
+          <div class="left__block">
+            <h2>About Me</h2>
+            <div class="photo">
+              <img src="img/person.jpg" alt="Me">
+            </div>
+            <p>A hardworking student and an aspiring deverloper.</p>
           </div>
-          <p>A hardworking student and an aspiring deverloper.</p>
-        </div>
-        <div class="block">
-          <h2>Skill</h2>
-          <ul>
-            <li>Web Developer</li>
-            <li>Android Developer</li>
-            <li>Apple Developer</li>
-          </ul>
-        </div>
-        <div class="block">
-          <h2>Follow Me</h2>
-          <div class="icon-bar">
-            <a href="https://www.linkedin.com/in/fengyiliu/" class="linkedin"><i class="fa fa-linkedin"></i></a>
-            <a href="https://github.com/lucasliu2019" class="github">  <i class="fa fa-github"></i> <!-- uses brands style --></a> 
+
+          <div class="left__block">
+            <h2>Skill</h2>
+            <ul>
+              <li>Web Developer</li>
+              <li>Android Developer</li>
+              <li>Apple Developer</li>
+            </ul>
           </div>
+
+          <div class="left__block">
+            <h2>Follow Me</h2>
+            <div class="icon-bar">
+              <a href="https://www.linkedin.com/in/fengyiliu/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/lucasliu2019" class="github"> <i class="fa fa-github"></i>
+                <!-- uses brands style --></a>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
 
     <div class="right">
       <div class="wrapper-right">
+
+        <!-- Work Section -->
         <div class="section">
           <h2 class="icon-section"><i class="fa fa-suitcase"></i>Work Experience</h2>
 
@@ -62,7 +76,8 @@
             <!-- To Be Inserted -->
           </div>
         </div>
-        
+
+        <!-- Education Section -->
         <div class="section">
           <h2 class="icon-section"><i class="fa fa-certificate"></i>Education</h2>
 
@@ -70,59 +85,64 @@
             <!-- To Be Inserted -->
           </div>
         </div>
+
+        
       </div>
     </div>
-
   </div>
+
+
+  <!-- FOOTER SECTION -->
   <div class="footer">
-    <h3 id="footer">Fengyi's Personal Website</h3>
-        <div class="icon-bar">
-          <a href="https://www.linkedin.com/in/fengyiliu/" class="linkedin"><i class="fa fa-linkedin"></i></a>
-          <a href="https://github.com/lucasliu2019" class="github">  <i class="fa fa-github"></i> <!-- uses brands style --></a> 
-        </div>
+    <span id="footer-title">Fengyi's Personal Website</span>
+    <div class="icon-bar">
+      <a href="https://www.linkedin.com/in/fengyiliu/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+      <a href="https://github.com/lucasliu2019" class="github"> <i class="fa fa-github"></i>
+        <!-- uses brands style --></a>
+    </div>
   </div>
 </body>
 
 <script>
-  readJSON("data/work.json", function(inText){
-    var myData=JSON.parse(inText);
-    let text="";
-    for(let i=0;i<myData.length;i++){
+  readJSON("data/work.json", function (inText) {
+    var myData = JSON.parse(inText);
+    let text = "";
+    for (let i = 0; i < myData.length; i++) {
 
-      text=text+"<hr>";
-      text=text+"<h3 class='section-title'><b>"+ myData[i]["job"] + ",&nbsp <span class='weak'>" + myData[i]["location"]+"</span></b></h3>";
-      text=text+"<h4 class='section-time'><i class='fa fa-calendar'></i>"+myData[i]["time"]+"</h4>";
-      text=text+"<p>";
-      text=text+"<ul>";
-        for(let j=0;j<myData[i]["duty"].length;j++){
-          text=text+"<li>"+myData[i]["duty"][j]+"</li>";
-        }
-      text=text+"</ul>";
-      text=text+"</p>";
+      text = text + "<hr>";
+      text = text + "<h3 class='section-title'><b>" + myData[i]["job"] + ",&nbsp <span class='weak'>" + myData[i]["location"] + "</span></b></h3>";
+      text = text + "<h4 class='section-time'><i class='fa fa-calendar'></i>" + myData[i]["time"] + "</h4>";
+      text = text + "<p>";
+      text = text + "<ul>";
+      for (let j = 0; j < myData[i]["duty"].length; j++) {
+        text = text + "<li>" + myData[i]["duty"][j] + "</li>";
+      }
+      text = text + "</ul>";
+      text = text + "</p>";
 
     }
-    document.getElementById("section-job").innerHTML+=text;
+    document.getElementById("section-job").innerHTML += text;
   });
 
 
-  readJSON("data/education.json", function(inText){
-    var myData=JSON.parse(inText);
-    let text="";
-    for(let i=0;i<myData.length;i++){
+  readJSON("data/education.json", function (inText) {
+    var myData = JSON.parse(inText);
+    let text = "";
+    for (let i = 0; i < myData.length; i++) {
 
-      text=text+"<hr>";
-      text=text+"<h3 class='section-title'>"+ myData[i]["school"] +",&nbsp <span class='weak'>"+myData[i]["location"]+"</span></h3>";
-      text=text+"<h4 class='section-time'><i class='fa fa-calendar'></i>"+myData[i]["time"]+"</h4>";
-      text=text+"<p>"+myData[i]["degree"];
-      text=text+"<ul>";
-        for(let j=0;j<myData[i]["duty"].length;j++){
-          text=text+"<li>"+myData[i]["duty"][j]+"</li>";
-        }
-      text=text+"</ul>";
-      text=text+"</p>";
+      text = text + "<hr>";
+      text = text + "<h3 class='section-title'>" + myData[i]["school"] + ",&nbsp <span class='weak'>" + myData[i]["location"] + "</span></h3>";
+      text = text + "<h4 class='section-time'><i class='fa fa-calendar'></i>" + myData[i]["time"] + "</h4>";
+      text = text + "<p>" + myData[i]["degree"];
+      text = text + "<ul>";
+      for (let j = 0; j < myData[i]["duty"].length; j++) {
+        text = text + "<li>" + myData[i]["duty"][j] + "</li>";
+      }
+      text = text + "</ul>";
+      text = text + "</p>";
 
     }
-    document.getElementById("section-education").innerHTML+=text;
+    document.getElementById("section-education").innerHTML += text;
   });
 </script>
 
