@@ -5,9 +5,9 @@
   --header-color: #bcdeff;
   --header-nav-bgcolor: #000000;
   --main:#33587d;
-  --section: #ffffff;
+  --section: #f6f6f6;
   --section-shadow:rgb(173, 216, 230);
-  --block: #ffffff;
+  --block: #f6f6f6;;
   --block-shadow:rgb(173, 216, 230);
   --footer: #000000;
   --footer-text:#ffffff;
@@ -68,7 +68,12 @@ span.weak {
 }
 
 .bot-header{
+  color:var(--header-color);
   background-color: var(--header-nav-bgcolor);
+
+  z-index: 1;
+  position:sticky;
+  top:0;
 }
 
 .bot-header__content{
@@ -107,7 +112,7 @@ span.weak {
 }
 
 .icon-bar{
-  padding-top: 20px;
+  padding: 10px 0;
 }
 
 /**** main *****/
