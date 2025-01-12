@@ -45,17 +45,15 @@ span.weak {
 }
 
 /** header **/
-.header{
+.top-header{
   min-height: 10vh;
   background-color: var(--header);
   text-align:center;
   color:var(--header-color);
-}
-
-.top-header{
-  display: flex;
-  flex-direction: column;
   padding: 10px;
+}
+.top-header> span{
+  display: block;
 }
 
 #top-header__title{
