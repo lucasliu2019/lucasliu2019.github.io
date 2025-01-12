@@ -54,9 +54,9 @@
         <div class="section">
           <h2>My Publications</h2>
           <!----------------------------------->
-          <ul id="pub-list">
+          <ol id="pub-list">
             <!-- TO Be Inserted -->
-          </ul>
+          </ol>
           <!------------------------------------->
         </div>
         <!-- END OF Publication section -->
@@ -84,7 +84,7 @@
     for (let i = 0; i < myData.length; i++) {
       text = text + "<li>";
       text = text + myData[i]["entry"];
-      text = text + " <a href='" + myData[i]["src"] + "''>pdf</a>";
+      text = text + " <a href='" + myData[i]["src"] + "''><i class='fa fa-file'></i></a>";
       text = text + "</li>";
     }
     document.getElementById("pub-list").innerHTML += text;
