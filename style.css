@@ -177,12 +177,16 @@ span.weak {
   margin: 6px 0;
 }
 
-
-#section-project .project-tile:hover img{
-  opacity: 0.3;
+.projectImg{
+  transition: all 0.3s ease;
+  max-width: 5px;
 }
 
-#section-project .project-tile img{
+.projectImg:hover{
+  opacity: 0.5;
+}
+
+#section-project img{
   width: 100%;
 }
 
@@ -211,13 +215,11 @@ span.weak {
   height: 120px;
 }
 
-.fakeimg:hover {
-  opacity: 0.3;
-}
 
 .fakeimg .fa{
   font-size: 50px;
 }
+
 
 .icon-bar{
   text-align: center;
@@ -225,6 +227,7 @@ span.weak {
 
 
 .icon-bar a {
+  border-radius: 5px;
   display: inline-block;
   text-align: center;
   padding: 10px;
@@ -244,7 +247,7 @@ span.weak {
 }
 
 .github {
-  background: #000000;
+  background: #343434;
   color: white;
 }
 

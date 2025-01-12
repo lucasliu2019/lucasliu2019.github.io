@@ -3,7 +3,8 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="script.js"></script>
   <title>Fengyi's Webpage</title>
@@ -38,8 +39,8 @@
           <div class="left__block">
             <h2>Follow Me</h2>
             <div class="icon-bar">
-              <a href="https://www.linkedin.com/in/fengyiliu/" class="linkedin"><i class="fa fa-linkedin"></i></a>
-              <a href="https://github.com/lucasliu2019" class="github"> <i class="fa fa-github"></i>
+              <a href="https://www.linkedin.com/in/fengyiliu/" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://github.com/lucasliu2019" class="github"> <i class="fa-brands fa-github"></i>
                 <!-- uses brands style --></a>
             </div>
           </div>
@@ -61,7 +62,7 @@
           <h2>My latest publication</h2>
           <div id="pub-list"></div>
         </div>
-        
+
       </div>
     </div>
   </div>
@@ -70,8 +71,8 @@
   <div class="footer">
     <span id="footer-title">Fengyi's Personal Website</span>
     <div class="icon-bar">
-      <a href="https://www.linkedin.com/in/fengyiliu/" class="linkedin"><i class="fa fa-linkedin"></i></a>
-      <a href="https://github.com/lucasliu2019" class="github"> <i class="fa fa-github"></i>
+      <a href="https://www.linkedin.com/in/fengyiliu/" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/lucasliu2019" class="github"> <i class="fa-brands fa-github"></i>
         <!-- uses brands style --></a>
     </div>
   </div>
@@ -93,7 +94,7 @@
       }
       text = text + "</a>";
       text = text + "<h3 class='section-title'> <a href='" + myData[0]["src"] + "'>" + myData[0]["name"] + "</a></h3>";
-      text = text + "<h4 class='section-time'><i class='fa fa-calendar'></i>" + myData[0]["time"] + "</h4>";
+      text = text + "<h4 class='section-time'><i class='fa fa-calendar-days'></i>" + myData[0]["time"] + "</h4>";
       text = text + "<p>";
       text = text + myData[0]["description"];
       text = text + "</p>";
