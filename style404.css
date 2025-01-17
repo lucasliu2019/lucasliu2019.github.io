@@ -1,0 +1,129 @@
+:root{
+    --border_color:rgb(84, 84, 84);
+    --window__bar__color: blue;
+    --window__main__color: rgb(8, 8, 22);
+    --font__color: antiquewhite;
+}
+
+body{
+    background-color: black;
+    color:var(--font__color);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    margin:auto;
+    margin-top: 100px;
+    width: 80%;
+    color: var(--font__color);
+}
+
+.window{
+    margin: auto;
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    background-color: rgb(60, 60, 60);
+    border: 2px solid var(--border_color);
+    border-radius: 1rem 1rem;
+}
+
+
+
+.window__bar{
+    border-radius: 1rem 1rem 0 0;
+    background-color:var(--window__bar__color);
+    height: 40px;
+    border-bottom: 2px solid var(--border_color);
+    display: flex;
+    align-items: center;
+}
+
+.circle{
+    margin-left: 20px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50% 50%;
+}
+
+.c1{
+    background-color: red;
+}
+
+.c2{
+    background-color: yellow;
+}
+
+.c3{
+    background-color: green;
+}
+
+.window__main{
+    border-radius: 0 0 1rem 1rem;
+    background-color: var(--window__main__color);
+    height: 356px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.window__content_top{
+    font-size: 5em;
+}
+
+.window__content_bot{
+    font-size: 2em;
+}
+
+/****** Footer *********/
+
+.footer{
+    text-align:center;
+    background-color:var(--footer);
+    color: var(--footer-text);
+    padding:40px 0;
+    /* To fix the footer is not at end */
+    min-height: 10vh;
+  }
+  
+  #footer-title{
+    font-size: 1rem;
+  }
+  
+  .icon-bar{
+    padding: 10px 0;
+  }
+
+  .icon-bar{
+    text-align: center;
+  }
+  
+  
+  .icon-bar a {
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    transition: all 0.3s ease;
+    color: inherit;
+    font-size: 2rem;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #787878;
+  }
+
+  .linkedin {
+    background: #007bb5;
+  }
+  
+  .github {
+    background: #343434;
+  }
