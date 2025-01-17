@@ -29,7 +29,7 @@ a:link, a:visited{
 }
 
 ul{
-  list-style: none;
+  list-style-position: inside
 }
 
 h1, h2{
@@ -80,6 +80,7 @@ span.weak {
 }
 
 .nav{
+  list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
