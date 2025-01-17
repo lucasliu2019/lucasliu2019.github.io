@@ -5,9 +5,9 @@
   --header-color: #bcdeff;
   --header-nav-bgcolor: #000000;
   --main:#33587d;
-  --section: #f6f6f6;
+  --section: #fdfff4;
   --section-shadow:rgb(173, 216, 230);
-  --block: #f6f6f6;;
+  --block: #fdfff4;
   --block-shadow:rgb(173, 216, 230);
   --footer: #000000;
   --footer-text:#ffffff;
@@ -50,7 +50,7 @@ span.weak {
   background-color: var(--header);
   text-align:center;
   color:var(--header-color);
-  padding: 10px;
+  padding-top: 10px;
 }
 .top-header> span{
   display: block;
